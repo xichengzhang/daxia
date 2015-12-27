@@ -13,4 +13,21 @@
 	<context:component-scan base-package="com.good.night.controllers"></context:component-scan>
 	<context:component-scan base-package="com.good.night.service"></context:component-scan>
 	<context:component-scan base-package="com.good.night.dao"></context:component-scan>
+	
+	<bean id="jade.dataSource.com.good.night.dao" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/yz?characterEncoding=utf8"/>
+        <property name="user" value="root"/>
+        <property name="password" value="root"/>
+        <property name="initialPoolSize"  value="3"/>
+        <property name="minPoolSize" value="10" />
+        <property name="maxPoolSize" value="20" />
+        <property name="breakAfterAcquireFailure" value="false" />
+        <property name="idleConnectionTestPeriod" value="1800"/>
+        <property name="acquireRetryAttempts" value="3" />
+        <property name="acquireIncrement" value="2"/>
+        <property name="acquireRetryDelay" value="1000"/>
+        <property name="testConnectionOnCheckout" value="false" />
+        <property name="testConnectionOnCheckin" value="false" />
+    </bean>
 </beans>
