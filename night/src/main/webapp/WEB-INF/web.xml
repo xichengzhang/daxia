@@ -16,9 +16,6 @@
 	<listener>
 		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
 	</listener>
-	<listener>
-		<listener-class>com.lizi.yunzhan.listeners.InitTreeDataListener</listener-class>
-	</listener>
 	<filter>
 		<filter-name>roseFilter</filter-name>
 		<filter-class>net.paoding.rose.RoseFilter</filter-class>

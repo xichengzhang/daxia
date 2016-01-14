@@ -7,6 +7,7 @@ import net.paoding.rose.web.annotation.rest.Get;
 public class HelloController {
 	@Get("world")
 	public String index() {
+		System.out.println("SSSSSSS");
 		return "@hello world";
 	}
 }
