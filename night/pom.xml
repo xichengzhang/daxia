@@ -16,12 +16,12 @@
 
 	<dependencies>
 	
-			<!-- mysql连接数据库 -->
 		<dependency>
 			<groupId>c3p0</groupId>
 			<artifactId>c3p0</artifactId>
 			<version>0.9.1.2</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -40,28 +40,31 @@
 			<artifactId>paoding-rose-scanning</artifactId>
 			<version>1.0</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>com.54chen</groupId>
 			<artifactId>paoding-rose</artifactId>
 			<version>1.0</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>com.54chen</groupId>
 			<artifactId>paoding-rose-portal</artifactId>
 			<version>1.0</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>com.54chen</groupId>
 			<artifactId>paoding-rose-jade</artifactId>
 			<version>1.1</version>
 		</dependency>
-		<!-- log4j日志 -->
+
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-
+		
 	</dependencies>
 
 	<build>
