@@ -17,7 +17,7 @@
 	<bean id="jade.dataSource.com.good.night.dao" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
         <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/yz?characterEncoding=utf8"/>
-        <property name="user" value="root"/>
+        <property name="user" value="root"/> 
         <property name="password" value="root"/>
         <property name="initialPoolSize"  value="3"/>
         <property name="minPoolSize" value="10" />
